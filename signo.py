@@ -14,7 +14,7 @@ data_atual = dt.datetime.now()
 # Cálculo de aniversário
 print('Olá', nome, 'seja bem vindo(a)')
 
-if mes <= data_atual.month and dia <= data_atual.day:
+if mes <= data_atual.month:
     print('Você tem atualmente', data_atual.year - ano, 'anos')
 else:
     print('Você tem atualmente', (data_atual.year - 1) - ano, 'anos')
@@ -68,5 +68,3 @@ elif mes == 11 and dia >= 21 or mes == 12 and dia < 20:
 elif mes == 12 and dia >= 21 or mes == 1 and dia < 20:
     print('Com base na sua data de nascimento seu signo é: Capricórnio')
     print('Frase: Existem coisas que são tão sérias, que você precisa rir delas.')
-else:
-    print('Pinto')
